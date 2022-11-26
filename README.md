@@ -1,4 +1,4 @@
-# Jarkom-Modul-4-C06
+# Jarkom-Modul-4-C06-2022
 
 ## Anggota Kelompok
 1. 5025201050 - Elshe Erviana Angely
@@ -412,3 +412,8 @@ iface eth0 inet static
 ```
 #### Setup Static dan Direct Routing
 Di setiap router statis dan perutean langsung dilakukan seperti di GNS, skrip router dapat dijalankan dengan `bash /root/script.sh`.
+
+## Kendala
+Tidak ada
+## Revisi
+Tidak ada
