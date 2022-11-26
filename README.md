@@ -149,3 +149,266 @@ Dari langkah 7 di atas, didapatkan penggabungan sebagai berikut:
 | A17 | 192.182.34.0 | 255.255.255.252 | 192.182.34.3 |
 | A18 | 192.182.36.0 | 255.255.255.252 | 192.182.36.3 |
 
+### Konfigurasi GNS
+#### The Resonance
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+        address 192.182.64.1
+        netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+         address 192.182.192.1
+         netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+        address 192.182.1.1
+        netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+        address 192.182.32.1
+        netmask 255.255.255.252
+```
+#### The Magical
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.100.2
+	netmask 255.255.255.252
+	gateway 192.182.100.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.96.1
+	netmask 255.255.254.0
+```
+#### The Magical
+```
+iface eth0 inet static
+	address 192.182.32.2
+	netmask 255.255.255.252
+	gateway 192.182.32.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.16.1
+	netmask 255.255.255.192
+
+auto eth2
+auto eth0
+iface eth0 inet static
+	address 192.182.32.2
+	netmask 255.255.255.252
+	gateway 192.182.32.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.16.1
+	netmask 255.255.255.192
+
+auto eth2
+iface eth2 inet static
+	address 192.182.8.1
+	netmask 255.255.255.252
+```
+#### The Minister
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.8.2
+	netmask 255.255.255.252
+	gateway 192.182.8.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.4.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.182.1.1
+	netmask 255.255.255.252
+```
+#### The Dauntless
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.1.2
+	netmask 255.255.255.252
+	gateway 192.182.1.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.0.1
+	netmask 255.255.255.0
+```
+#### The Queen
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.64.2
+	netmask 255.255.255.0
+	gateway 192.182.64.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.65.1
+	netmask 255.255.255.252
+```
+#### The Instrument
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.80.2
+	netmask 255.255.255.252
+	gateway 192.182.80.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.74.1
+	netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+	address 192.182.68.1
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 192.182.73.1
+	netmask 255.255.255.252
+```
+#### The Profound
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.73.2
+	netmask 255.255.255.252
+	gateway 192.182.73.1
+
+auto eth1
+iface eth1 inet static
+	address 192.182.72.129
+	netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+	address 192.182.72.1
+	netmask 255.255.255.128
+```
+#### Ashaf
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.16.2
+	netmask 255.255.255.192
+	gateway 192.182.16.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+  ```
+#### The Beast
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.98.2
+	netmask 255.255.255.252
+	gateway 192.182.98.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Haines
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.96.3
+	netmask 255.255.254.0
+	gateway 192.182.96.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Corvekt
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.96.2
+	netmask 255.255.254.0
+	gateway 192.182.96.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Spendrow
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.72.2
+	netmask 255.255.255.128
+	gateway 192.182.72.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Helga
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.72.130
+	netmask 255.255.255.128
+	gateway 192.182.72.129
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Oakleave
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.66.2
+	netmask 255.255.254.0
+	gateway 192.182.66.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### The Witch
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.65.2
+	netmask 255.255.255.252
+	gateway 192.182.65.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Keith
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.64.3
+	netmask 255.255.255.0
+	gateway 192.182.64.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Johan
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.0.2
+	netmask 255.255.255.0
+	gateway 192.182.0.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Phanora
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.0.3
+	netmask 255.255.255.0
+	gateway 192.182.0.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Guideau
+```
+auto eth0
+iface eth0 inet static
+	address 192.182.4.2
+	netmask 255.255.252.0
+	gateway 192.182.4.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+#### Setup Static dan Direct Routing
+Di setiap router statis dan perutean langsung dilakukan seperti di GNS, skrip router dapat dijalankan dengan `bash /root/script.sh`.
